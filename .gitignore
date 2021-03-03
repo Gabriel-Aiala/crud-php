@@ -1,0 +1,6 @@
+
+crudoo/vendor/cocur/slugify/src/Bridge/Laravel/SlugifyFacade.php
+crudoo/vendor/cocur/slugify/src/Bridge/Laravel/SlugifyServiceProvider.php
+crudoo/vendor/cocur/slugify/src/Bridge/Latte/SlugifyHelper.php
+crudoo/vendor/cocur/slugify/src/Bridge/League/SlugifyServiceProvider.php
+crudoo/vendor/cocur/slugify/src/Bridge/Nette/SlugifyExtension.php
