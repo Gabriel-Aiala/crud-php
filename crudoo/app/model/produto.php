@@ -14,7 +14,7 @@ class produto{
     }
 
     public function getDescricao(){
-        return $this->nome;
+        return $this->descricao;
     }
     public function setDescricao($descricao)
     {
@@ -22,7 +22,7 @@ class produto{
     }
 
     public function getId(){
-        return $this->nome ;
+        return $this->id ;
     }
     public function setId($id){
         $this->id = $id;

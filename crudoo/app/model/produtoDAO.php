@@ -25,7 +25,7 @@ class produtoDao{
     }
     public function update(produto $e)
     {
-        $sql = 'UPDTADE produtos SET nome = ? , descricao = ?';
+        $sql = ' UPDATE produtos SET nome= ? , descricao= ?  WHERE id= ? ';
         $update = conexao::getconn()->prepare($sql);
 
         $update->bindValue(1, $e->getNome());
@@ -33,11 +33,11 @@ class produtoDao{
         $update->bindValue(3, $e->getId());
         $update->execute();
     }
-    public function delete($id)
+    public function delete(produto $e)
     {
         $sql = 'DELETE FROM produtos WHERE id = ?';
         $delete = conexao::getconn()->prepare($sql);
-        $delete->bindValue(1, $id);
+        $delete->bindValue(1, $e->getId());
         $delete->execute();
     }
 
